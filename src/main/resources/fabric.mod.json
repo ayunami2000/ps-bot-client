@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "psbot",
+  "version": "${version}",
+
+  "name": "ps-bot",
+  "description": "kaboom bot",
+  "authors": [
+    "ayunami2000"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ayunami2000",
+    "sources": "https://glitch.com/~ps-bot-kaboom"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/psbot/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.ayunami2000.psbot.PsBot"
+    ]
+  },
+  "mixins": [
+    "psbot.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.2",
+    "fabric": "*",
+    "minecraft": "1.19.x",
+    "java": ">=17"
+  },
+  "suggests": {}
+}
